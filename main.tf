@@ -73,15 +73,15 @@ resource "aws_instance" "uf" {
 }
 
 data "aws_eip" "static_ip_c0m1" {
-  public_ip = "3.217.1.29"
+  public_ip = "52.3.203.248"
 }
 
 data "aws_eip" "static_ip_idx-1" {
-  public_ip = "54.152.4.170"
+  public_ip = "3.219.10.91"
 }
 
 data "aws_eip" "static_ip_idx-2" {
-  public_ip = "54.165.79.126"
+  public_ip = "3.221.42.150"
 }
 
 resource "aws_eip_association" "static_ip_c0m1" {
