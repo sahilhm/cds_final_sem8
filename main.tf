@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "yastee-terraform-bucket"
+    bucket = "sahil-project"
     key    = "terraform.tfstate"
     region = "us-east-2"
   }
