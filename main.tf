@@ -15,7 +15,7 @@ data "template_file" "userdata_client" {
 }
 
 resource "aws_instance" "c0m1" {
-	ami = "ami-0affd4508a5d2481b"
+	ami = "ami-01e36b7901e884a10"
 	instance_type = "t2.micro"
 	key_name = "cds_project2020"
 	user_data = "${data.template_file.userdata_client.rendered}"
@@ -27,7 +27,7 @@ resource "aws_instance" "c0m1" {
 
 
 resource "aws_instance" "idx-1" {
-	ami = "ami-0affd4508a5d2481b"
+	ami = "ami-01e36b7901e884a10"
 	instance_type = "t2.micro"
 	key_name = "cds_project2020"
 	user_data = "${data.template_file.userdata_client.rendered}"
@@ -38,7 +38,7 @@ resource "aws_instance" "idx-1" {
 }
 
 resource "aws_instance" "idx-2" {
-	ami = "ami-0affd4508a5d2481b"
+	ami = "ami-01e36b7901e884a10"
 	instance_type = "t2.micro"
 	key_name = "cds_project2020"
 	user_data = "${data.template_file.userdata_client.rendered}"
@@ -49,7 +49,7 @@ resource "aws_instance" "idx-2" {
 }
 
 resource "aws_instance" "sh" {
-	ami = "ami-0affd4508a5d2481b"
+	ami = "ami-01e36b7901e884a10"
 	instance_type = "t2.micro"
 	key_name = "cds_project2020"
 	user_data = "${data.template_file.userdata_client.rendered}"
@@ -61,7 +61,7 @@ resource "aws_instance" "sh" {
 }
 
 resource "aws_instance" "uf" {
-	ami = "ami-0affd4508a5d2481b"
+	ami = "ami-01e36b7901e884a10"
 	instance_type = "t2.micro"
 	key_name = "cds_project2020"
 	user_data = "${data.template_file.userdata_client.rendered}"
